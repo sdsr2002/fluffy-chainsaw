@@ -30,6 +30,7 @@ public class BallHandler : MonoBehaviour
     /// </summary>
     [SerializeField, Tooltip("Ball to be spawned")]
     private GameObject _ballPrefab;
+
     /// <summary>
     /// springJoints connected body and spawnpoint for the balls
     /// </summary>
@@ -129,6 +130,9 @@ public class BallHandler : MonoBehaviour
         _currentBall.Position = ViewToWorldPosition(_touchPosition);
     }
 
+    /// <summary>
+    /// Spawns new ball and assignes necessary variables
+    /// </summary>
     private void SpawnNewBall()
     {
         GameObject newball = Instantiate(_ballPrefab, _anchor.transform.position, _ballPrefab.transform.rotation);
