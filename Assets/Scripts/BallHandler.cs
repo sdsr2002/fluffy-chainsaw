@@ -10,7 +10,7 @@ public class BallHandler : MonoBehaviour
     [Header("Ball Variables")]
 
     /// <summary>
-    /// How many seconds until after launch it will detach the springjoint
+    /// How many seconds after launch until it will detach the springjoint
     /// </summary>
     [SerializeField, Tooltip("How fast the ball detaches from springjoint")] 
     private float _detachDelay = 0.2f;
