@@ -78,6 +78,7 @@ public class BallHandler : MonoBehaviour
 
     private void Update()
     {
+        if (!_currentBall) return;
         // checks for touch
         if (!Touchscreen.current.primaryTouch.press.isPressed)
         {
